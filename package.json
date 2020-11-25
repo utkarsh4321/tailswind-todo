@@ -1,0 +1,14 @@
+{
+  "name": "fullstack-todo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server public",
+    "dev": "npx tailwindcss build style.css -o public/style.css"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^1.9.6"
+  }
+}
