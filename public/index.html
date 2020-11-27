@@ -8,24 +8,48 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="dark:bg-gray-900 dark:text-white font-body">
+<body class="dark:bg-gray-900 dark:text-white font-body bg-gray-300 text-gray-800">
 
-  <header>
-    <div class="p-5 flex justify-between align-center">
-      <h1 class="text-2xl">Todo</h1>
-      <button class="dark:bg-gray-700 rounded-full h-10 w-10 flex items-center justify-center"><svg class="w-6 h-6"
-          fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-        </svg></button>
-    </div>
-  </header>
+  <div class="flex flex-col h-screen">
+    <header class="flex-shrink-0">
+      <div class="p-5 flex justify-between align-center">
+        <h1 class="text-2xl font-weight-semibold">Todo</h1>
+        <button
+          class="dark:bg-gray-700 border-0 bg-darkSecondary rounded-full h-10 w-10 flex items-center justify-center focus:outline-none"
+          id="toogleBtn"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg></button>
+      </div>
+    </header>
+
+    <main class="flex justify-center mt-48 h-full flex-auto content-center">
+
+      <div class="flex flex-col flex-auto max-w-sm sm:max-w-md md:max-w-md lg:max-w-md xl:max-w-md mx-3">
+        <h1 class="text-6xl text-gray-700 tracking-wide dark:text-darkSecondary mb-5
+         text-center font-bold">Sign In
+        </h1>
+
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Password" />
+        <button class="flex">Login <span><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg></span></button>
+      </div>
+    </main>
 
 
 
 
+  </div>
 
 
+
+
+  <script src="./main.js"></script>
 </body>
+
 
 </html>
