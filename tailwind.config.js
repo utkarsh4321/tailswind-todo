@@ -26,7 +26,10 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    translate: ['responsive', 'hover', 'focus', 'group-hover'],
+    transform: ['responsive', 'hover', 'focus', 'group-hover']
+  },
   plugins: [],
   experimental: {
     darkModeVariant: true
