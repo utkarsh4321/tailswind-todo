@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="dark:bg-gray-900 dark:text-white font-body bg-gray-300 text-gray-800">
+
+  <div class="flex flex-col h-screen">
+    <header class="flex-shrink-0">
+      <div class="p-5 flex justify-between align-center">
+        <h1 class="text-2xl font-weight-semibold dark:text-darkSecondary">Todo</h1>
+        <div class="flex">
+          <button class="md:mr-20 mr-8">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg>
+          </button>
+          <button
+            class="dark:bg-gray-700 border-0 bg-darkSecondary rounded-full h-10 w-10 flex items-center justify-center focus:outline-none"
+            id="toogleBtn"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg></button>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="flex justify-center h-full flex-auto content-center">
+
+      <div class="flex flex-col mt-6 flex-auto max-w-sm sm:max-w-md md:max-w-xl lg:max-w-xl xl:max-w-xl mx-2">
+        <div class="dateSection">
+          <div>
+            <span>Nov</span><span>22</span><span>20</span>
+          </div>
+          <div><span>10</span>:<span>15</span>am</div>
+        </div>
+        <div class="todo__form--section">
+          <button><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg></button>
+          <div class="todo__form--content">
+            <input type="text" placeholder="Your todo" />
+            <input type="text" placeholder="Todo reward" />
+            <button>Add</button>
+          </div>
+        </div>
+        <div class="todo__container">
+          <div>Todo</div>
+        </div>
+      </div>
+    </main>
+
+
+
+
+  </div>
+
+
+
+
+  <script src="./main.js"></script>
+</body>
+
+
+</html>
