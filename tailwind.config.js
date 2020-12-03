@@ -25,6 +25,7 @@ module.exports = {
         // 'dark': { 'raw': '(prefers-color-scheme: dark)' },
       }
     },
+
   },
   variants: {
     translate: ['responsive', 'hover', 'focus', 'group-hover'],
