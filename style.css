@@ -22,6 +22,12 @@
 .btn-submit:focus{
   @apply outline-none;
 }
+.todo-input{
+  @apply py-2 px-3 border border-transparent rounded
+}
+.todo-input:focus{
+  @apply outline-none border-blue-400;
+}
 
 @media(min-width:640px){
 
