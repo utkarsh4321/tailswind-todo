@@ -1,9 +1,8 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  purge: [
+    './public/**/*.html',
+  ],
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -18,22 +17,24 @@ module.exports = {
 
       colors: {
         darkPrimary: '#223C5F',
-        darkSecondary: '#E3927F'
+        darkSecondary: '#E3927F',
+        pinker: 'red',
+        lucky: 'green',
+        rama: "purple"
 
       },
-      screens: {
-        // 'dark': { 'raw': '(prefers-color-scheme: dark)' },
-      }
     },
-
   },
   variants: {
-    translate: ['responsive', 'hover', 'focus', 'group-hover'],
-    transform: ['responsive', 'hover', 'focus', 'group-hover']
+    extend: {
+      transform: ['responsive', 'group-hover'],
+      transformOrigin: ['responsive', 'group-hover'],
+      transitionDelay: ['responsive', 'group-hover'],
+      transitionDuration: ['responsive', 'group-hover'],
+      transitionProperty: ['responsive', 'group-hover'],
+      transitionTimingFunction: ['responsive', 'group-hover'],
+      translate: ['responsive', 'hover', 'focus', 'group-hover'],
+    },
   },
   plugins: [],
-  experimental: {
-    darkModeVariant: true
-  },
-  dark: 'class'
 }
