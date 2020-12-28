@@ -45,38 +45,45 @@
           </div>
           <div class="text-center"><span>10</span>:<span>15</span>am</div>
         </div>
-        <div class="mt-8 todo__form--section w-full">
+        <div class="relative mt-8 todo__form--section w-full">
           <button
-            class="mx-auto dark:bg-gray-700 rounded-full h-12 w-12 flex justify-center items-center bg-gray-800 text-white"><svg
+            class="add__btn mx-auto dark:bg-gray-700 rounded-full h-12 w-12 flex justify-center items-center bg-gray-800 text-white"><svg
               class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
               </path>
             </svg></button>
           <div
-            class="flex flex-col mx-auto mt-6 todo__form--content w-3/4  px-3 py-4 rounded text-current dark:bg-gray-700 bg-gray-200">
+            class="todo__form flex flex-col mx-auto mt-6 todo__form--content w-3/4  px-3 py-4 rounded text-current dark:bg-gray-700 bg-gray-200">
             <input type="text" placeholder="Your todo" class="todo-input dark:bg-gray-800 " />
             <input type=" text" placeholder="Todo reward" class="todo-input dark:bg-gray-800 mt-3 " />
             <button class="mt-4 px-4 py-2 rounded dark:bg-darkSecondary bg-gray-800 text-white">Add</button>
           </div>
         </div>
-        <div class="todo__container">
-          <div>
-            <div>
+        <div class="todo__container w-full mt-6 mb-4 p-3">
+          <div
+            class="group flex justify-between rounded bg-gray-200 dark:bg-gray-800 p-4 cursor-pointer overflow-hidden">
+            <div class="flex items-center">
               <input type="checkbox" />
-              <h4>Todo</h4>
+              <h4 class="ml-2">Todo</h4>
             </div>
-            <div>
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <div
+              class="transition-all duration-300 ease-in-out translate-x-20 flex items-center w-0 transform group-hover:translate-x-0 group-hover:w-14">
+              <svg
+                class="transition duration-300 ease-in-out mr-2 transform hover:scale-110 motion-reduce:transition-none motion-reduce:transform-none w-6 h-6"
+                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z">
                 </path>
               </svg>
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
+
+              <svg
+                class="transition duration-300 ease-in-out mr-1 transform hover:scale-110 motion-reduce:transition-none motion-reduce:transform-none w-6 h-6"
+                fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
                 </path>
               </svg>
+
 
             </div>
 

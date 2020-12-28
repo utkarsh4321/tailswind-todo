@@ -23,6 +23,10 @@ module.exports = {
         rama: "purple"
 
       },
+      transitionProperty: {
+        'width': 'width',
+        'spacing': 'margin, padding',
+      }
     },
   },
   variants: {
@@ -31,9 +35,11 @@ module.exports = {
       transformOrigin: ['responsive', 'group-hover'],
       transitionDelay: ['responsive', 'group-hover'],
       transitionDuration: ['responsive', 'group-hover'],
-      transitionProperty: ['responsive', 'group-hover'],
+      transitionProperty: ['responsive', 'group-hover', 'motion-safe', 'motion-reduce'],
       transitionTimingFunction: ['responsive', 'group-hover'],
       translate: ['responsive', 'hover', 'focus', 'group-hover'],
+      width: ["responsive", "hover", "focus", "group-hover"]
+
     },
   },
   plugins: [],

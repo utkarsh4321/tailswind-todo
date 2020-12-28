@@ -39,6 +39,27 @@
 .todo__list:hover .edit__todo{
 transform: translateX(0px);
 }
+.add__btn{
+  position: relative;
+  left:0;
+transition:left .2s ease-in, transform .3s ease-in-out;
+}
+.btn-active{
+  transform: rotate(45deg);
+left:auto;
+}
+.todo__form{
+  opacity: 0;
+  transition:transform .4s ease-in,opacity 0.5s ease;
+  transform-origin:center bottom;
+}
+.form__active{
+  opacity:1;
+  /* display: flex; */
+  /* opacity: 1; */
+   transform:translateY(-10px);
+}
+
 
 @media(min-width:640px){
 

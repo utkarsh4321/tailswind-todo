@@ -18,3 +18,8 @@ document.getElementById('toogleBtn').addEventListener('click', () => {
   }
   document.documentElement.classList.toggle('dark');
 })
+
+document.querySelector('.add__btn').addEventListener('click', function () {
+  this.classList.toggle('btn-active');
+  document.querySelector('.todo__form').classList.toggle('form__active');
+})
