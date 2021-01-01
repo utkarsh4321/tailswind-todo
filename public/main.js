@@ -20,6 +20,17 @@ document.getElementById('toogleBtn').addEventListener('click', () => {
 })
 
 document.querySelector('.add__btn').addEventListener('click', function () {
-  this.classList.toggle('btn-active');
-  document.querySelector('.todo__form').classList.toggle('form__active');
+  // this.classList.toggle('btn-active');
+  document.querySelector('.overflow-div').classList.add('open');
+  document.querySelector('.todo__form').classList.add('form__active');
+})
+document.querySelector('.overflow-div').addEventListener('click',function(e){
+
+if(e.target.classList.contains('overflow-div')){
+  this.classList.remove('open');
+  document.querySelector('.todo__form').classList.remove('form__active');
+
+}
+
+
 })

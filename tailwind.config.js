@@ -38,7 +38,8 @@ module.exports = {
       transitionProperty: ['responsive', 'group-hover', 'motion-safe', 'motion-reduce'],
       transitionTimingFunction: ['responsive', 'group-hover'],
       translate: ['responsive', 'hover', 'focus', 'group-hover'],
-      width: ["responsive", "hover", "focus", "group-hover"]
+      width: ["responsive", "hover", "focus", "group-hover"],
+      backgroundOpacity:['dark']
 
     },
   },

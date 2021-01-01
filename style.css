@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @tailwind base;
 
@@ -6,68 +6,80 @@
 
 @tailwind utilities;
 
-.formControl{
+.formControl {
   @apply rounded-md;
-   @apply mb-6;
-   @apply py-4;
-   @apply px-3;
-
+  @apply mb-6;
+  @apply py-4;
+  @apply px-3;
 }
-.formControl:focus{
+.formControl:focus {
   @apply outline-none;
 }
-.btn-submit{
+.btn-submit {
   @apply flex w-full bg-gray-800 text-white items-center justify-center p-3 rounded-md mt-4 text-2xl font-bold;
 }
-.btn-submit:focus{
+.btn-submit:focus {
   @apply outline-none;
 }
-.todo-input{
-  @apply py-2 px-3 border border-transparent rounded
+.todo-input {
+  @apply py-2 px-3 border border-transparent rounded;
 }
-.todo-input:focus{
+.todo-input:focus {
   @apply outline-none border-blue-400;
 }
 
-.edit__todo{
+.edit__todo {
   transform: translateX(94px);
   transition: transform 200ms ease;
 }
-.todo__list{
+.todo__list {
   overflow: hidden;
 }
-.todo__list:hover .edit__todo{
-transform: translateX(0px);
+.todo__list:hover .edit__todo {
+  transform: translateX(0px);
 }
-.add__btn{
+.add__btn {
   position: relative;
-  left:0;
-transition:left .2s ease-in, transform .3s ease-in-out;
+  left: 0;
+  transition: left 0.2s ease-in, transform 0.3s ease-in-out;
 }
-.btn-active{
+.btn-active {
   transform: rotate(45deg);
-left:auto;
+  left: auto;
 }
-.todo__form{
+.todo__form {
   opacity: 0;
-  transition:transform .4s ease-in,opacity 0.5s ease;
-  transform-origin:center bottom;
+  visibility: hidden;
+  transform-origin: center bottom;
+  height: max-content;
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  will-change: opacity, transform, visibility;
+  transform: translateY(30px);
+  position: relative;
 }
-.form__active{
-  opacity:1;
-  /* display: flex; */
-  /* opacity: 1; */
-   transform:translateY(-10px);
+.form__active {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+  transition: transform 0.4s ease, opacity 0.4s ease, visibility 0.4s ease;
+  will-change: opacity, transform, visibility;
+}
+.overflow-div {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s opacity ease, 0.2s visibility ease;
+  will-change: visibility, opacity;
+}
+.overflow-div.open {
+  opacity: 1;
+  visibility: visible;
+  will-change: visibility, opacity;
 }
 
-
-@media(min-width:640px){
-
-  .today{
+@media (min-width: 640px) {
+  .today {
     position: relative;
-    top:21px;
+    top: 21px;
   }
-
-
 }
-
