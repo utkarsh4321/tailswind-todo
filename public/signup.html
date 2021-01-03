@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./com.css">
-</head>
-
-<body class="dark:bg-gray-900 dark:text-white font-body bg-gray-300 text-gray-800">
-
-  <div class="flex flex-col h-screen">
-    <header class="flex-shrink-0">
-      <div class="p-5 flex justify-between align-center">
-        <h1 class="text-2xl font-weight-semibold dark:text-darkSecondary">Todo</h1>
-        <button
-          class="dark:bg-gray-700 border-0 bg-darkSecondary rounded-full h-10 w-10 flex items-center justify-center focus:outline-none"
-          id="toogleBtn"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
-          </svg></button>
-      </div>
-    </header>
-
-    <main class="flex justify-center items-center h-full flex-auto content-center">
-
-      <div class="flex flex-col flex-auto max-w-sm sm:max-w-md md:max-w-md lg:max-w-md xl:max-w-md mx-3">
-        <h1 class="text-6xl text-gray-700 tracking-wide dark:text-darkSecondary mb-5
-         text-center font-bold">Sign Up
-        </h1>
-        <input type="text" placeholder="Username" class="formControl bg-white dark:bg-gray-700" />
-        <input type="email" placeholder="Email" class="formControl dark:bg-gray-700" />
-        <input type="number" placeholder="Mobile" class="formControl bg-white dark:bg-gray-700" />
-        <input type="password" placeholder="Password" class="formControl bg-white dark:bg-gray-700" />
-        <button
-          class="btn-submit dark:bg-darkSecondary transition-transform duration-200 ease-in-out dark:text-gray-800 group transform hover:scale-105">
-          <span>Signup</span>
-          <svg class="w-6 h-6 ml-1 transition-transform duration-1000 ease-out transform group-hover:translate-x-1"
-            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-          </svg>
-        </button>
-        <div class="signup-link flex md:mt-8 mt-4 justify-center">
-          <h4>Already have an account login here</h4>
-          <a href="./index.html" class="ml-2 border-b-2 border-current">login</a>
+  <body
+    class="dark:bg-gray-900 dark:text-white font-body bg-gray-300 text-gray-800"
+  >
+    <div class="flex flex-col h-screen">
+      <header class="flex-shrink-0">
+        <div class="p-5 flex justify-between align-center">
+          <h1 class="text-2xl font-weight-semibold dark:text-darkSecondary">
+            Todo
+          </h1>
+          <button
+            class="dark:bg-gray-700 border-0 bg-darkSecondary rounded-full h-10 w-10 flex items-center justify-center focus:outline-none"
+            id="toogleBtn"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+              ></path>
+            </svg>
+          </button>
         </div>
-      </div>
-    </main>
+      </header>
 
+      <main
+        class="flex justify-center items-center h-full flex-auto content-center"
+      >
+        <div
+          class="flex flex-col flex-auto max-w-sm sm:max-w-md md:max-w-md lg:max-w-md xl:max-w-md mx-3"
+        >
+          <h1
+            class="text-6xl text-gray-700 tracking-wide dark:text-darkSecondary mb-5 text-center font-bold"
+          >
+            Sign Up
+          </h1>
+          <input
+            type="text"
+            placeholder="Username"
+            class="formControl bg-white dark:bg-gray-700"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="formControl dark:bg-gray-700"
+          />
+          <input
+            type="number"
+            placeholder="Mobile"
+            class="formControl bg-white dark:bg-gray-700"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            class="formControl bg-white dark:bg-gray-700"
+          />
+          <button
+            class="btn-submit dark:bg-darkSecondary transition-transform duration-200 ease-in-out dark:text-gray-800 group transform hover:scale-105"
+          >
+            <span>Signup</span>
+            <svg
+              class="w-6 h-6 ml-1 transition-transform duration-1000 ease-out transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              ></path>
+            </svg>
+          </button>
+          <div class="signup-link flex md:mt-8 mt-4 justify-center">
+            <h4>Already have an account login here</h4>
+            <a href="./index.html" class="ml-2 border-b-2 border-current"
+              >login</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
 
-
-
-  </div>
-
-
-
-
-  <script src="./main.js"></script>
-</body>
-
-
+    <script src="./main.js"></script>
+  </body>
 </html>
